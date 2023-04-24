@@ -31,7 +31,6 @@ function generate(){
     let randomWord = words[Math.floor(Math.random() * words.length)]
     console.log(randomWord);
     captcha.innerHTML = randomWord;
-    consol
 }
 
 generate();
