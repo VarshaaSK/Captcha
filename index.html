@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8eabd914cf.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="captcha">
+                <p id="word"></p>
+            </div>
+            <input type="text" class="user-captcha" id="userInput">
+            <div class="results">
+                <button class="check" onclick="checkCaptcha()">Check</button>
+                <button class="reset"><i class="fa-solid fa-retweet"></i></button>
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <img src="Images/tick.png">
+            <h2 class="thank">Great!</h2>
+            <p>Your Captcha is Correct</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+
+
+        <div class="wrong-popup" id="wrong-popup">
+            <img src="Images/wrong.png">
+            <h2 class="thank">Oops!</h2>
+            <p>Sorry, Captcha is Wrong</p>
+            <button type="button" onclick="wrongClosePopup()">Try Again</button>
+        </div>
+
+
+    </div>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/words.js"></script> -->
+</body>
+</html>
