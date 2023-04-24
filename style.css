@@ -47,6 +47,11 @@ body{
     border-radius: 10px;
 }
 
+::selection{
+    background: #693333;
+    color: #fff;
+}
+
 input{
     border: 1px dashed #693333;
     outline: none;
